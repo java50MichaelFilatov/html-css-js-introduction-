@@ -1,0 +1,33 @@
+.main-class {
+   display: flex;
+    flex-direction: column;
+  }
+  .section-class {
+    display: flex;
+    flex-direction:row;
+    width: 35vw;
+    
+  }
+  .black {
+    width: 5vw;
+    height: 5vw;
+    border: solid 1px black;
+    background-color: black;
+  }
+    .White{
+        width: 5vw;
+        height: 5vw;
+        border: solid 1px black;
+        
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+    
+  }
+  html {
+    height: 100%
+  }
