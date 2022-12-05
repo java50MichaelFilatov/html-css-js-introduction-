@@ -1,3 +1,14 @@
+@font-face{
+    font-family: airstream;
+    src: url(fonts/Airstream-webfont.svg);
+    src: url(fonts/Airstream-webfont.woff);
+}
+    @font-face {
+        font-family: lakeshor;
+        src: url(fonts/LAKESHOR-webfont.svg);
+        src: url(fonts/LAKESHOR-webfont.woff);
+    }
+
 html {
     height: 100%
 }
@@ -7,32 +18,49 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+
+    
 }
 .logo {
     display: block;
     text-align: center;
     background-color: beige;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: lakeshor;
+    
 }
 .main-class {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    
+   
 }
 .details-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 8vh;
+    margin-bottom: 2vh;
+   
 }
 .details-image {
+    border: solid 2px blue;
+    margin-top: -10vh;
+    border-radius: 25%;
+    overflow: hidden;
     width: 60vw;
-    height: 50vw;
+    height: 40vw;
 }
 .details-title {
     display: block;
     background-color: aliceblue;
 }
 .thumbnails-list {
+    margin-top: 8vh;
     display: flex;
     flex-wrap: wrap;
     max-height: 30vh;
@@ -40,25 +68,62 @@ body {
     list-style: none;
     justify-content: space-around;
     padding-left: 0;
+    
+    
 }
 .thumbnails-item {
+
     border: solid 2px blue;
-    margin-top: 3vh;
+    margin-top: 2vh;
     border-radius: 25%;
     overflow: hidden;
+
 }
 .thumbnails-anchor {
+    text-decoration: none;
 
 }
 .thumbnails-image {
     width: 25vw;
-    height: 15vw
+    height: 15vw;
+    display: block;
 }
 .thumbnails-title {
     display: block;
     text-align: center;
     background-color: antiquewhite;
-    margin-top: -1.5vw;
     text-decoration: none;
+    height: 4vh;
     
+}
+
+@media(min-width :560px)
+{.main-class{
+    flex-direction: row;
+}
+.thumbnails-list{
+    order: -1;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-height: 80vh;
+    justify-content: flex-start;
+    
+}
+.thumbnails-item
+{
+    min-height: 18vw;
+    margin-right: 10px;
+}
+.thumbnails-title
+{
+    height: 5vw;
+}
+.details-image
+{
+    width: 55vw;
+    height: 35vw;
+    margin-top: 1vh;
+
+}
+
 }
