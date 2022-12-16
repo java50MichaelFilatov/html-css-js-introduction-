@@ -12,87 +12,147 @@
     <header class="logo">
         <h2>Cars Gallery</h2>
     </header>
-    <main class="main-class">
-        <section class="details-container">
+    <main class="main-class hidden">
+        <section class="details-container is-point">
+            <audio id="audio" src=""></audio>
+            <div class="details-frame">
+                <button id="hide-button" onclick="hideDetails()">hide details</button>
             <img src="images/car1.jpeg" class="details-image">
             <span class="details-title">Your Personal Car</span>
+        </div>
         </section>
         <ul class="thumbnails-list">
             <li class="thumbnails-item">
-                <a class="thumbnails-anchor" href="#">
+                <a class="thumbnails-anchor" href="#" data-details-image="images/car1.jpeg"
+                data-details-title="The most rare car">
                     <img src="images/car1.jpeg" class="thumbnails-image">
                     <span class="thumbnails-title">Porshe</span>
                 </a>
             </li>
             <li class="thumbnails-item">
-                <a class="thumbnails-anchor" href="#">
+                <a class="thumbnails-anchor" href="#" data-details-image="images/car2.jpg"
+                data-details-title="The most rare car2">
                     <img src="images/car2.jpg" class="thumbnails-image">
                     <span class="thumbnails-title">Lamborgini</span>
                 </a>
             </li>
             
             <li class="thumbnails-item">
-                <a class="thumbnails-anchor" href="#">
+                <a class="thumbnails-anchor" href="#" data-details-image="images/car3.jpeg"
+                data-details-title="The most rare car3">
                     <img src="images/car3.jpeg" class="thumbnails-image">
                     <span class="thumbnails-title">Pagani</span>
                 </a>
             </li>
             <li class="thumbnails-item">
-                <a class="thumbnails-anchor" href="#">
+                <a class="thumbnails-anchor" href="#" data-details-image="images/car4.jpeg"
+                data-details-title="The most rare car4">
                     <img src="images/car4.jpeg" class="thumbnails-image">
                     <span class="thumbnails-title">Mercedes</span>
                 </a>
             </li>
             <li class="thumbnails-item">
-                <a class="thumbnails-anchor" href="#">
+                <a class="thumbnails-anchor" href="#" data-details-image="images/car5.jpeg"
+                data-details-title="The most rare car5">
                     <img src="images/car5.jpeg" class="thumbnails-image">
                     <span class="thumbnails-title">Delorian</span>
                 </a>
             </li>
             <li class="thumbnails-item">
-                <a class="thumbnails-anchor" href="#">
+                <a class="thumbnails-anchor" href="#" data-details-image="images/car6.jpeg"
+                data-details-title="The most rare car6">
                     <img src="images/car6.jpeg" class="thumbnails-image">
                     <span class="thumbnails-title">Lexus</span>
                 </a>
             </li>
             <li class="thumbnails-item">
-                <a class="thumbnails-anchor" href="#">
+                <a class="thumbnails-anchor" href="#" data-details-image="images/car1.jpeg"
+                data-details-title="The most rare car">
                     <img src="images/car1.jpeg" class="thumbnails-image">
                     <span class="thumbnails-title">Porshe</span>
                 </a>
             </li>
             <li class="thumbnails-item">
-                <a class="thumbnails-anchor" href="#">
+                <a class="thumbnails-anchor" href="#" data-details-image="images/car2.jpg"
+                data-details-title="The most rare car2">
                     <img src="images/car2.jpg" class="thumbnails-image">
                     <span class="thumbnails-title">Lamborgini</span>
                 </a>
             </li>
             
             <li class="thumbnails-item">
-                <a class="thumbnails-anchor" href="#">
+                <a class="thumbnails-anchor" href="#" data-details-image="images/car3.jpeg"
+                data-details-title="The most rare car3">
                     <img src="images/car3.jpeg" class="thumbnails-image">
                     <span class="thumbnails-title">Pagani</span>
                 </a>
             </li>
             <li class="thumbnails-item">
-                <a class="thumbnails-anchor" href="#">
+                <a class="thumbnails-anchor" href="#" data-details-image="images/car4.jpeg"
+                data-details-title="The most rare car4">
                     <img src="images/car4.jpeg" class="thumbnails-image">
                     <span class="thumbnails-title">Mercedes</span>
                 </a>
             </li>
             <li class="thumbnails-item">
-                <a class="thumbnails-anchor" href="#">
+                <a class="thumbnails-anchor" href="#" data-details-image="images/car5.jpeg"
+                data-details-title="The most rare car5">
                     <img src="images/car5.jpeg" class="thumbnails-image">
                     <span class="thumbnails-title">Delorian</span>
                 </a>
             </li>
             <li class="thumbnails-item">
-                <a class="thumbnails-anchor" href="#">
+                <a class="thumbnails-anchor" href="#" data-details-image="images/car6.jpeg"
+                data-details-title="The most rare car6">
+                    <img src="images/car6.jpeg" class="thumbnails-image">
+                    <span class="thumbnails-title">Lexus</span>
+                </a>
+            </li>
+            <li class="thumbnails-item">
+                <a class="thumbnails-anchor" href="#" data-details-image="images/car1.jpeg"
+                data-details-title="The most rare car">
+                    <img src="images/car1.jpeg" class="thumbnails-image">
+                    <span class="thumbnails-title">Porshe</span>
+                </a>
+            </li>
+            <li class="thumbnails-item">
+                <a class="thumbnails-anchor" href="#" data-details-image="images/car2.jpg"
+                data-details-title="The most rare car2">
+                    <img src="images/car2.jpg" class="thumbnails-image">
+                    <span class="thumbnails-title">Lamborgini</span>
+                </a>
+            </li>
+            
+            <li class="thumbnails-item">
+                <a class="thumbnails-anchor" href="#" data-details-image="images/car3.jpeg"
+                data-details-title="The most rare car3">
+                    <img src="images/car3.jpeg" class="thumbnails-image">
+                    <span class="thumbnails-title">Pagani</span>
+                </a>
+            </li>
+            <li class="thumbnails-item">
+                <a class="thumbnails-anchor" href="#" data-details-image="images/car4.jpeg"
+                data-details-title="The most rare car4">
+                    <img src="images/car4.jpeg" class="thumbnails-image">
+                    <span class="thumbnails-title">Mercedes</span>
+                </a>
+            </li>
+            <li class="thumbnails-item">
+                <a class="thumbnails-anchor" href="#" data-details-image="images/car5.jpeg"
+                data-details-title="The most rare car5">
+                    <img src="images/car5.jpeg" class="thumbnails-image">
+                    <span class="thumbnails-title">Delorian</span>
+                </a>
+            </li>
+            <li class="thumbnails-item">
+                <a class="thumbnails-anchor" href="#" data-details-image="images/car6.jpeg"
+                data-details-title="The most rare car6">
                     <img src="images/car6.jpeg" class="thumbnails-image">
                     <span class="thumbnails-title">Lexus</span>
                 </a>
             </li>
         </ul>
     </main>
+    <script src="src/cars.js"></script>
 </body>
 </html>
