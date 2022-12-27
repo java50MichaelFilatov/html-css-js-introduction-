@@ -6,6 +6,7 @@ if(res<0)
 {res=-res;}
 let ser=0;
 let res1=0;
+res=Number(res);
 do{ser=res%10;
 res1=Math.trunc(res1+ser);
 res=Math.trunc(res/10);
@@ -26,9 +27,9 @@ console.log(eval(string1));
 let num=-1234;
 let res2=revers(num);
 function revers(num)
-{let newNum=" ";
+{let newNum="";
 if(num<0)
-{newNum="- ";
+{newNum="-";
 num=-num;}
     do{
         let dig=num%10;
@@ -40,10 +41,17 @@ return newNum;}
 console.log(res2);
 //
 
-    res="asa"/2;
-    res1="a"+res+"a"+"s";
-
-
+    res="ASA"/2;
+    res1="A"+res+"A"+"S";
 console.log(res1.toLowerCase());
+//
+let res12;
+try{
+    res12=eval(expressionStr);
+   
 
+}catch(e){
+    return "NaN";
+}
+return res;
 
